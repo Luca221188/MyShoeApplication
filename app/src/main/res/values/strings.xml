@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">MyShoeApp</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_title_view">App Title</string>
+    <string name="email_view">Email</string>
+    <string name="password_view">Password</string>
+    <string name="email_edit_hint">Email</string>
+    <string name="pwd_edit_hint">Password</string>
+    <string name="sign_in_btn">Sign In</string>
+    <string name="sign_up_btn">Sign up</string>
+    <string name="dummy_text_1_view">Dummy text 1</string>
+    <string name="dummy_text_2_view">Dummy text 2</string>
+    <string name="log_out_item">Log out</string>
 </resources>
