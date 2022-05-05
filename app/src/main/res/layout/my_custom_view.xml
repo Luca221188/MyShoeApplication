@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_custom_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/name_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name_text_view" />
+
+    <TextView
+        android:id="@+id/size_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/size_text_view" />
+
+    <TextView
+        android:id="@+id/company_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/company_text_view" />
+
+    <TextView
+        android:id="@+id/descr_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description_text_view" />
+</merge>

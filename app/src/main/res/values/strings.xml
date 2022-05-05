@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">MyShoeApp</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="app_title_view">App Title</string>
     <string name="email_view">Email</string>
     <string name="password_view">Password</string>
@@ -11,4 +10,9 @@
     <string name="dummy_text_1_view">Dummy text 1</string>
     <string name="dummy_text_2_view">Dummy text 2</string>
     <string name="log_out_item">Log out</string>
+    <string name="name_text_view">Name: %1$s</string>
+    <string name="size_text_view">Size: %1$s</string>
+    <string name="company_text_view">Company: %1$s</string>
+    <string name="description_text_view">Description: %1$s</string>
+
 </resources>
