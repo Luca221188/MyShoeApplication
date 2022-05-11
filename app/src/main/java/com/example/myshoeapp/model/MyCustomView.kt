@@ -24,6 +24,7 @@ class MyCustomView(context: Context?): LinearLayout(context) {
         //inflater.inflate(R.layout.my_custom_view,this, true)
         inflate(context, R.layout.my_custom_view, this)
 
+        //u should use Binding maybe..
         d = findViewById(R.id.descr_view)
         n = findViewById(R.id.name_view)
         c = findViewById(R.id.company_view)
@@ -46,6 +47,7 @@ class MyCustomView(context: Context?): LinearLayout(context) {
     }
 
     fun setShoeSize(size: Double) {
+        //u should convert this value into the ViewModel I think..
         val sizeToString = size.toString()
         val text = String.format(resources.getString(R.string.size_text_view), sizeToString)
         s.text = text

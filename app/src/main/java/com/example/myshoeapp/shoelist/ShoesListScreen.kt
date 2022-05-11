@@ -29,6 +29,8 @@ class ShoesListScreen : Fragment() {
         binding.shoeListViewModel = shoeListViewModel
         //binding.lifecycleOwner = viewLifecycleOwner
 
+        //u create an observe() for the newShoe var in ViewModel. When it changes, u update the list!
+
         val linearLayout = binding.shoeListLinearLayout
 
             shoeListViewModel.shoeList.value?.forEach {

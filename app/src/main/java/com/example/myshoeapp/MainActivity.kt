@@ -11,6 +11,7 @@ import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.onNavDestinationSelected
 import com.example.myshoeapp.databinding.ActivityMainBinding
 
+//Menu "Log Out" is broken
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,5 +38,6 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.my_nav_host_fragment)
             return item.onNavDestinationSelected(navController)
     }
+
 
 }

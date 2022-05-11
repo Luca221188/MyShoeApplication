@@ -11,8 +11,7 @@
         <action
             android:id="@+id/action_loginScreen_to_welcomeScreen"
             app:destination="@id/welcomeScreen"
-            app:popUpTo="@id/loginScreen"
-            app:popUpToInclusive="true" />
+            app:popUpToInclusive="false" />
     </fragment>
     <fragment
         android:id="@+id/welcomeScreen"
@@ -21,7 +20,6 @@
         <action
             android:id="@+id/action_welcomeScreen_to_instructionsScreen"
             app:destination="@id/instructionsScreen"
-            app:popUpTo="@id/welcomeScreen"
             app:popUpToInclusive="false" />
     </fragment>
     <fragment
@@ -31,8 +29,7 @@
         <action
             android:id="@+id/action_instructionsScreen_to_shoesListScreen"
             app:destination="@id/shoesListScreen"
-            app:popUpTo="@id/instructionsScreen"
-            app:popUpToInclusive="false" />
+            app:popUpTo="@id/loginScreen" />
     </fragment>
     <fragment
         android:id="@+id/shoesListScreen"
@@ -40,10 +37,18 @@
         android:label="ShoesListScreen" >
         <action
             android:id="@+id/action_shoesListScreen_to_shoeDetailScreen"
-            app:destination="@id/shoeDetailScreen" />
+            app:destination="@id/shoeDetailScreen"
+            app:popUpTo="@id/shoesListScreen"
+            app:popUpToInclusive="false" />
     </fragment>
     <fragment
         android:id="@+id/shoeDetailScreen"
-        android:name="com.example.myshoeapp.ShoeDetailScreen"
-        android:label="ShoeDetailScreen" />
+        android:name="com.example.myshoeapp.shoedetail.ShoeDetailScreen"
+        android:label="ShoeDetailScreen" >
+        <action
+            android:id="@+id/action_shoeDetailScreen_to_shoesListScreen"
+            app:destination="@id/shoesListScreen"
+            app:popUpTo="@id/shoesListScreen"
+            app:popUpToInclusive="false" />
+    </fragment>
 </navigation>
