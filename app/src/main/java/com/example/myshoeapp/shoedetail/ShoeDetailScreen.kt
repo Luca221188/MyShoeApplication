@@ -17,18 +17,13 @@ import com.example.myshoeapp.model.Shoe
 //NOTE: I am not sure u really need ViewModel here...
 class ShoeDetailScreen : Fragment() {
     private lateinit var binding: FragmentShoeDetailScreenBinding
-    private lateinit var shoeDetailViewModel: ShoeDetailViewModel
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         binding = DataBindingUtil.inflate(inflater,
             R.layout.fragment_shoe_detail_screen, container, false)
 
-        shoeDetailViewModel = ViewModelProvider(this).get(ShoeDetailViewModel::class.java)
-        binding.shoeDetailViewModel = shoeDetailViewModel
-
-
         binding.cancelBtn.setOnClickListener {
-            findNavController().navigate(ShoeDetailScreenDirections.actionShoeDetailScreenToShoesListScreen())
+            activity?.onBackPressed()
         }
 
         binding.saveBtn.setOnClickListener {
@@ -36,7 +31,7 @@ class ShoeDetailScreen : Fragment() {
             if (shoeToAdd == null) {
                 Toast.makeText(context, "Shoe is null", Toast.LENGTH_SHORT).show()
             }else {
-                findNavController().navigate(ShoeDetailScreenDirections.actionShoeDetailScreenToShoesListScreen())
+                findNavController().navigate(ShoeDetailScreenDirections.actionShoeDetailScreenToShoesListScreen(shoeToAdd))
             }
         }
 

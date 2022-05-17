@@ -13,7 +13,7 @@ class InstructionsScreen : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_instructions_screen, container, false)
-        binding.instructionBtn.setOnClickListener { it.findNavController().navigate(InstructionsScreenDirections.actionInstructionsScreenToShoesListScreen()) }
+        binding.instructionBtn.setOnClickListener { it.findNavController().navigate(InstructionsScreenDirections.actionInstructionsScreenToShoesListScreen(null)) }
 
         setHasOptionsMenu(true)
 
